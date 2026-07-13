@@ -65,7 +65,7 @@ button, input, textarea { font: inherit; }
   color: white;
   background:
     linear-gradient(120deg, rgba(15,10,7,0.92), rgba(40,24,13,0.66) 52%, rgba(40,24,13,0.25)),
-    url("../images/hero-backroad.svg") center/cover no-repeat;
+    url("hero-michael-horse.jpg") center/cover no-repeat;
 }
 .hero-overlay {
   position: absolute; inset: 0;
