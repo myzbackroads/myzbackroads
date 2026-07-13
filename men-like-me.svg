@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#5e2f44"/><stop offset="1" stop-color="#28324e"/></linearGradient>
+  <filter id="s"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-opacity=".28"/></filter>
+</defs>
+<rect width="100%" height="100%" fill="url(#g)"/>
+<circle cx="936.0" cy="240.0" r="192.0" fill="#f4c66a" opacity=".32"/>
+<path d="M0 936.0 Q 300.0 744.0 600.0 960.0 T 1200 864.0 V 1200 H0Z" fill="#17120d" opacity=".55"/>
+<text x="96.0" y="192.0" font-family="Arial, sans-serif" font-size="42.00000000000001" font-weight="700" fill="#fff" letter-spacing="8">MYZ BACKROADS</text>
+<text x="96.0" y="660.0" font-family="Georgia, serif" font-size="114.0" font-weight="700" fill="#fff" filter="url(#s)">Men Like Me</text>
+<text x="96.0" y="768.0" font-family="Arial, sans-serif" font-size="40.800000000000004" fill="#f7e8d2">Identity • truth • belonging</text>
+<text x="996.0" y="1080.0" font-family="Arial, sans-serif" font-size="144.0" fill="#f4c66a" opacity=".9">♥</text>
+</svg>
