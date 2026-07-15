@@ -1,50 +1,55 @@
 # MyZ Backroads Website
 
-A complete static website for **MyZ Backroads**, built for GitHub and Netlify.
+A launch-ready static website for **MyZ Backroads**, built for GitHub and Netlify.
 
 ## Fastest way to publish
 
-1. Download and unzip this package.
-2. Open your GitHub repository: `myzbackroads/myzbackroads`.
-3. Click **Add file** → **Upload files**.
-4. Drag **all files and folders inside this package** into GitHub.
-5. In the commit box, type: `Add MyZ Backroads website`
-6. Click **Commit changes**.
-7. Netlify should redeploy automatically within a few minutes.
+1. Push this repository to GitHub.
+2. Connect the repository to Netlify.
+3. Use the repository root as the publish directory.
+4. Leave the build command blank; this is a plain HTML/CSS/JavaScript site.
+5. Netlify should redeploy automatically within a few minutes after each push.
 
 The repository root must contain `index.html`.
 
 ## Files included
 
-- `index.html` — main website
+- `index.html` — main website, featured release, story, music, videos, gallery, and contact sections
 - `privacy.html` — privacy page
 - `404.html` — custom page-not-found screen
-- `netlify.toml` — Netlify settings
-- `assets/css/styles.css` — design and mobile layout
-- `assets/js/main.js` — mobile menu and copyright year
-- `assets/images/` — all website artwork and placeholders
+- `styles.css` — design system, responsive layout, accessibility states, and visual polish
+- `main.js` — reusable featured-release and song data, music rendering, mobile menu, and copyright year
+- `robots.txt` — crawler rules and sitemap reference
+- `sitemap.xml` — sitemap for the public pages
+- Image files in the repository root — cover art, gallery artwork, favicon, hero, and social preview assets
 
-## Replacing the placeholder portrait
+## Updating music and featured releases
 
-Replace:
+Future songs can be added in `main.js` by adding another item to the `songs` array. The featured release is controlled by the `featuredRelease` object.
 
-`assets/images/michael-placeholder.svg`
+Each song supports:
 
-with your own image. You can use JPG or PNG, but then update the image name in `index.html`.
+- Cover art
+- Description
+- Story behind the song
+- YouTube
+- Spotify
+- Apple Music
+- Bandcamp
 
-Example:
+Only links that are present in the song data are rendered, so unavailable services are hidden automatically.
 
-```html
-<img src="assets/images/michael.jpg" alt="Michael Maraia" />
-```
+## Updating images
 
-## Replacing gallery placeholders
+Upload new JPG, PNG, WebP, or SVG assets into the repository root and update the matching image path in `index.html` or `main.js`.
 
-Upload your photos into `assets/images/` and change the image paths in the Gallery section of `index.html`.
+For best launch performance:
 
-## Updating music links
-
-Search `index.html` for the existing YouTube, Spotify, Apple Music, Instagram, and TikTok links and replace any link that changes.
+- Use appropriately sized images.
+- Keep cover art square when possible.
+- Keep hero photography wide enough for desktop cropping.
+- Add meaningful alt text for content images.
+- Do not stretch or distort images; the CSS uses `object-fit: cover` for cropped cards.
 
 ## Contact email
 
