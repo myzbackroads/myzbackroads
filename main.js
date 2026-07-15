@@ -5,6 +5,8 @@ if (toggle && nav) {
   toggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(isOpen));
+    const label = toggle.querySelector('.sr-only');
+    if (label) label.textContent = isOpen ? 'Close menu' : 'Open menu';
   });
 
   nav.querySelectorAll('a').forEach(link => {
