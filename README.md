@@ -20,27 +20,23 @@ The repository root must contain `index.html`.
 - `privacy.html` — privacy page
 - `404.html` — custom page-not-found screen
 - `netlify.toml` — Netlify settings
-- `assets/css/styles.css` — design and mobile layout
-- `assets/js/main.js` — mobile menu and copyright year
-- `assets/images/` — all website artwork and placeholders
+- `styles.css` — design, responsive layout, and Phase 1 visual system
+- `main.js` — mobile menu behavior and dynamic copyright year
+- root image files (`*.svg`, `*.png`, `*.jpg`) — website artwork, cover art, portraits, and placeholders
 
-## Replacing the placeholder portrait
+## Updating the portrait
 
-Replace:
-
-`assets/images/michael-placeholder.svg`
-
-with your own image. You can use JPG or PNG, but then update the image name in `index.html`.
+The homepage currently uses `michael-maraia.jpg` for the portrait card and `hero-michael-horse.jpg` for the hero background. Replace either root-level image file with an optimized JPG/PNG of the same name, or update the matching `src`/CSS reference in `index.html` and `styles.css`.
 
 Example:
 
 ```html
-<img src="assets/images/michael.jpg" alt="Michael Maraia" />
+<img src="michael-maraia.jpg" alt="Michael Maraia" />
 ```
 
 ## Replacing gallery placeholders
 
-Upload your photos into `assets/images/` and change the image paths in the Gallery section of `index.html`.
+Upload your photos to the repository root or a dedicated image folder, then change the image paths in the Gallery section of `index.html`.
 
 ## Updating music links
 
