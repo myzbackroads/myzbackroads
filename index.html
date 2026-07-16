@@ -72,6 +72,7 @@
           <a href="#story">My Country Story</a>
           <a href="#timeline">Backroads</a>
           <a href="#music">Music</a>
+          <a href="#listen-links">Listen</a>
           <a href="#videos">Videos</a>
           <a href="#gallery">Gallery</a>
           <a href="#country-life">Country Life</a>
@@ -231,8 +232,15 @@
             </p>
           </div>
 
+          <div class="music-discovery" aria-label="Music discovery shortcuts">
+            <a href="#track-embrace-yourself">Featured release</a>
+            <a href="#track-combat-cowboy">Veteran stories</a>
+            <a href="#track-let-it-go">Recovery songs</a>
+            <a href="#listen-links">All listening platforms</a>
+          </div>
+
           <div class="music-grid" aria-label="MyZ Backroads song catalog">
-            <article class="track-card featured">
+            <article id="track-embrace-yourself" class="track-card featured">
               <div class="track-art">
                 <img
                   src="embrace-yourself.png"
@@ -265,7 +273,7 @@
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-combat-cowboy" class="track-card">
               <div class="track-art">
                 <img
                   src="combat-cowboy.png"
@@ -298,19 +306,11 @@
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-let-it-go" class="track-card">
               <div class="track-art">
                 <img
                   src="let-it-go.png"
                   alt="Let It Go single cover art"
-                  onerror="
-                    if (this.src.endsWith('.png')) {
-                      this.src = 'let-it-go.jpg';
-                    } else {
-                      this.onerror = null;
-                      this.src = 'gallery-4.svg';
-                    }
-                  "
                 />
               </div>
               <div class="track-info">
@@ -339,7 +339,7 @@
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-a-friend-i-used-to-know" class="track-card">
               <div class="track-art">
                 <img
                   src="A-friend-i-use-to-know.png"
@@ -361,23 +361,16 @@
                     rel="noopener"
                     >Bandcamp</a
                   >
+                  <a class="button button-small button-primary" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify playlist</a>
                 </div>
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-along-the-way" class="track-card">
               <div class="track-art">
                 <img
                   src="along-the-way.png"
                   alt="Along the Way single cover art"
-                  onerror="
-                    if (this.src.endsWith('.png')) {
-                      this.src = 'along-the-way.jpg';
-                    } else {
-                      this.onerror = null;
-                      this.src = 'gallery-4.svg';
-                    }
-                  "
                 />
               </div>
               <div class="track-info">
@@ -395,11 +388,12 @@
                     rel="noopener"
                     >Bandcamp</a
                   >
+                  <a class="button button-small button-primary" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify playlist</a>
                 </div>
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-the-lord-kept-me" class="track-card">
               <div class="track-art">
                 <img
                   src="lord-kept-me.svg"
@@ -413,10 +407,14 @@
                   A testimony about surviving the hardest chapters and
                   recognizing the grace that carried you.
                 </p>
+                <div class="track-actions">
+                  <a class="button button-small button-primary" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify playlist</a>
+                  <a class="button button-small button-ghost" href="https://myzbackroads.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+                </div>
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-hug-a-horse" class="track-card">
               <div class="track-art">
                 <img src="hug-a-horse.svg" alt="Hug a Horse single cover art" />
               </div>
@@ -435,11 +433,12 @@
                     rel="noopener"
                     >YouTube</a
                   >
+                  <a class="button button-small button-ghost" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify playlist</a>
                 </div>
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-men-like-me" class="track-card">
               <div class="track-art">
                 <img src="men-like-me.svg" alt="Men Like Me single cover art" />
               </div>
@@ -450,10 +449,14 @@
                   A heartfelt song about honesty, identity, and the courage to
                   be seen.
                 </p>
+                <div class="track-actions">
+                  <a class="button button-small button-primary" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify playlist</a>
+                  <a class="button button-small button-ghost" href="https://myzbackroads.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+                </div>
               </div>
             </article>
 
-            <article class="track-card">
+            <article id="track-leave-while-you-can" class="track-card">
               <div class="track-art">
                 <img
                   src="leave-while-you-can.svg"
@@ -467,11 +470,15 @@
                   A direct, compassionate song about recognizing harm and
                   finding the courage to walk away.
                 </p>
+                <div class="track-actions">
+                  <a class="button button-small button-primary" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify playlist</a>
+                  <a class="button button-small button-ghost" href="https://myzbackroads.bandcamp.com/" target="_blank" rel="noopener">Bandcamp</a>
+                </div>
               </div>
             </article>
           </div>
 
-          <div class="platform-links" aria-label="Listen on music platforms">
+          <div id="listen-links" class="platform-links" aria-label="Listen on music platforms">
             <a
               href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9"
               target="_blank"
@@ -558,9 +565,8 @@
               <h2>The road so far.</h2>
             </div>
             <p>
-              A polished photo wall is ready for Phase 3 images—music sessions,
-              coffee-shop workdays, horses, country roads, and the real history
-              behind MyZ Backroads.
+              Scenes from the music journey: songwriting, horses, country roads,
+              veteran stories, and the real history behind MyZ Backroads.
             </p>
           </div>
 
@@ -575,36 +581,36 @@
             <figure data-category="Music sessions">
               <img
                 src="gallery-1.svg"
-                alt="Placeholder for an early music journey photo"
+                alt="Illustration of the early MyZ Backroads music journey"
               />
               <figcaption>The beginning</figcaption>
             </figure>
             <figure data-category="Music sessions">
               <img
                 src="gallery-2.svg"
-                alt="Placeholder for a songwriting photo"
+                alt="Illustration of songwriting and story work"
               />
               <figcaption>Writing the story</figcaption>
             </figure>
             <figure data-category="Horses and healing">
-              <img src="gallery-3.svg" alt="Placeholder for a horse photo" />
+              <img src="gallery-3.svg" alt="Illustration of healing through horses" />
               <figcaption>Healing through horses</figcaption>
             </figure>
             <figure data-category="Country roads">
               <img
                 src="gallery-4.svg"
-                alt="Placeholder for a country road photo"
+                alt="Illustration of a country road and new chapters"
               />
               <figcaption>Backroads and new chapters</figcaption>
             </figure>
             <figure data-category="Veteran stories">
-              <img src="gallery-5.svg" alt="Placeholder for a veteran photo" />
+              <img src="gallery-5.svg" alt="Illustration representing veteran stories and strength" />
               <figcaption>Service and strength</figcaption>
             </figure>
             <figure data-category="Music sessions">
               <img
                 src="gallery-6.svg"
-                alt="Placeholder for a recording photo"
+                alt="Illustration of turning life into music"
               />
               <figcaption>Turning life into music</figcaption>
             </figure>
@@ -615,12 +621,17 @@
       <section id="country-life" class="section section-country-life">
         <div class="container country-life-card">
           <p class="eyebrow">Country Life</p>
-          <h2>Coming soon: stories from the porch, pasture, and road.</h2>
+          <h2>Stories from the porch, pasture, and road.</h2>
           <p>
-            A new Country Life section is being prepared for behind-the-scenes
-            notes, horse-country reflections, coffee-shop workdays, road
-            stories, and the everyday moments behind MyZ Backroads music.
+            Country life is part of the sound: horse-country calm, coffee-shop
+            workdays, road stories, and everyday moments that turn into MyZ
+            Backroads songs.
           </p>
+          <div class="country-life-list" aria-label="Country life themes">
+            <span>Horse-country healing</span>
+            <span>Backroad reflections</span>
+            <span>Coffee-shop workdays</span>
+          </div>
           <a class="button button-primary" href="#contact">Share a story idea</a>
         </div>
       </section>
