@@ -52,7 +52,8 @@
 
       <nav id="site-nav" class="site-nav" aria-label="Main navigation">
         <a href="#story">Meet Michael</a>
-        <a href="#music">Music</a>
+        <a href="#music">Music Library</a>
+        <a href="#country-life">Country Life</a>
         <a href="#life-road">Life Road</a>
         <a href="#experience">Experience</a>
         <a href="#gallery">Gallery</a>
@@ -117,40 +118,67 @@
       </div>
     </section>
 
-    <section id="music" class="section section-dark">
+    <section id="music" class="section section-dark music-section">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading music-heading">
           <div>
-            <p class="eyebrow">Music</p>
+            <p class="eyebrow">Music Library</p>
             <h2>Songs with something to say.</h2>
           </div>
           <p>
-            A growing catalog of country, gospel, soul, and Americana built around
-            real stories and emotional truth.
+            A complete, responsive catalog of country, country-soul, gospel, and Americana songs built around
+            real stories, hard-earned hope, service, healing, and everyday backroad truth.
           </p>
         </div>
 
-        <div class="music-grid">
-          <article class="track-card featured">
-            <img src="embrace-yourself.png" loading="lazy" alt="Embrace Yourself cover art" />
-            <div class="track-info">
-              <span>Upcoming single</span>
-              <h3>Embrace Yourself</h3>
-              <p>A song about self-acceptance, belonging, and standing comfortably in your own life.</p>
-              <div class="track-actions">
-                <a class="button button-small button-primary" href="https://www.youtube.com/shorts/0XKMZEgj9PE" target="_blank" rel="noopener">YouTube</a>
-                <a class="button button-small button-ghost" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify playlist</a>
-              </div>
+        <article class="featured-song" aria-labelledby="featured-song-title">
+          <div class="featured-song-art">
+            <img src="embrace-yourself.png" loading="lazy" alt="Embrace Yourself single cover art" />
+          </div>
+          <div class="featured-song-copy">
+            <p class="eyebrow">Featured Song</p>
+            <h3 id="featured-song-title">Embrace Yourself</h3>
+            <p class="track-description">
+              A warm country-soul anthem about self-acceptance, belonging, and learning to stand comfortably in your own life.
+            </p>
+            <dl class="song-meta">
+              <div><dt>Release</dt><dd>July 17, 2026</dd></div>
+              <div><dt>Style</dt><dd>Country soul / Americana</dd></div>
+              <div><dt>Status</dt><dd>Upcoming single</dd></div>
+            </dl>
+            <div class="story-panel">
+              <h4>Story behind the song</h4>
+              <p>
+                “Embrace Yourself” carries the MyZ Backroads message forward: real struggle can become a place of grace,
+                and the road to healing often starts by accepting the person still standing after the storm.
+              </p>
             </div>
-          </article>
+            <div class="track-actions" aria-label="Stream Embrace Yourself">
+              <a class="button button-small button-primary" href="https://www.youtube.com/shorts/0XKMZEgj9PE" target="_blank" rel="noopener">YouTube</a>
+              <a class="button button-small button-ghost" href="https://open.spotify.com/playlist/0c64zK7VqUoXVB45qRaXF9" target="_blank" rel="noopener">Spotify</a>
+              <a class="button button-small button-ghost" href="https://music.apple.com/us/playlist/myz-backroads-real-stories-real-struggles/pl.u-e98lkypIMzJ3W9" target="_blank" rel="noopener">Apple Music</a>
+            </div>
+          </div>
+        </article>
 
+        <div class="music-library-heading">
+          <div>
+            <p class="eyebrow">Complete Library</p>
+            <h3>Every available song, organized for every screen.</h3>
+          </div>
+          <a class="text-link text-link-light" href="#country-life">Country Life coming soon →</a>
+        </div>
+
+        <div class="music-grid music-library">
           <article class="track-card">
             <img src="combat-cowboy.png" loading="lazy" alt="Combat Cowboy cover art" />
             <div class="track-info">
               <span>Veteran story</span>
               <h3>Combat Cowboy</h3>
-              <p>A country story of service, memory, strength, and what follows a soldier home.</p>
-              <div class="track-actions">
+              <p class="track-description">A country story of service, memory, strength, and what follows a soldier home.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>Written from a veteran storyteller’s perspective, this song honors the weight of service and the courage it takes to keep living with the memories.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Available on YouTube and Bandcamp.</p>
+              <div class="track-actions" aria-label="Stream Combat Cowboy">
                 <a class="button button-small button-primary" href="https://www.youtube.com/shorts/G30Xathik_0" target="_blank" rel="noopener">YouTube</a>
                 <a class="button button-small button-ghost" href="https://myzbackroads.bandcamp.com/track/combat-cowboy" target="_blank" rel="noopener">Bandcamp</a>
               </div>
@@ -158,13 +186,14 @@
           </article>
 
           <article class="track-card">
-            <img src="let-it-go.png" loading="lazy" alt="Let It Go cover art"
-                 onerror="if(this.src.endsWith('.png')){this.src='let-it-go.jpg';}else{this.onerror=null;this.src='gallery-4.svg';}" />
+            <img src="let-it-go.png" loading="lazy" alt="Let It Go cover art" />
             <div class="track-info">
               <span>Forgiveness and freedom</span>
               <h3>Let It Go</h3>
-              <p>A country-soul song about releasing the weight of the past and choosing peace.</p>
-              <div class="track-actions">
+              <p class="track-description">A country-soul song about releasing the weight of the past and choosing peace.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>This track is for anyone carrying old hurt, resentment, or regret and needing a reminder that freedom can begin with release.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Available on YouTube and Bandcamp.</p>
+              <div class="track-actions" aria-label="Stream Let It Go">
                 <a class="button button-small button-primary" href="https://youtube.com/shorts/8tCPugw9RLw" target="_blank" rel="noopener">YouTube</a>
                 <a class="button button-small button-ghost" href="https://myzbackroads.bandcamp.com/track/let-it-go" target="_blank" rel="noopener">Bandcamp</a>
               </div>
@@ -172,26 +201,28 @@
           </article>
 
           <article class="track-card">
-            <img src="A-friend-i-use-to-know.png" loading="lazy" alt="A Friend I Used to Know cover art"
-                 onerror="this.onerror=null;this.src='gallery-1.svg';" />
+            <img src="A-friend-i-use-to-know.png" loading="lazy" alt="A Friend I Used to Know cover art" />
             <div class="track-info">
               <span>Friendship and memory</span>
               <h3>A Friend I Used to Know</h3>
-              <p>A deeply personal reflection on friendship, loss, trust, and the memories that remain.</p>
-              <div class="track-actions">
+              <p class="track-description">A personal reflection on friendship, loss, trust, and the memories that remain.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>The song looks back at a bond that changed over time, holding both the ache of distance and the gratitude for what once was.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Available on Bandcamp.</p>
+              <div class="track-actions" aria-label="Stream A Friend I Used to Know">
                 <a class="button button-small button-ghost" href="https://myzbackroads.bandcamp.com/track/a-friend-i-used-to-know" target="_blank" rel="noopener">Bandcamp</a>
               </div>
             </div>
           </article>
 
           <article class="track-card">
-            <img src="along-the-way.png" loading="lazy" alt="Along the Way cover art"
-                 onerror="if(this.src.endsWith('.png')){this.src='along-the-way.jpg';}else{this.onerror=null;this.src='gallery-4.svg';}" />
+            <img src="along-the-way.png" loading="lazy" alt="Along the Way cover art" />
             <div class="track-info">
               <span>Recovery and survival</span>
               <h3>Along the Way</h3>
-              <p>A raw look at addiction, consequences, survival, and the hard-earned lessons found along the way.</p>
-              <div class="track-actions">
+              <p class="track-description">A raw look at addiction, consequences, survival, and hard-earned lessons.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>“Along the Way” turns painful chapters into testimony, tracing the cost of hard roads and the wisdom found by surviving them.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Available on Bandcamp.</p>
+              <div class="track-actions" aria-label="Stream Along the Way">
                 <a class="button button-small button-ghost" href="https://myzbackroads.bandcamp.com/track/along-the-way" target="_blank" rel="noopener">Bandcamp</a>
               </div>
             </div>
@@ -202,7 +233,9 @@
             <div class="track-info">
               <span>Country gospel</span>
               <h3>The Lord Kept Me</h3>
-              <p>A testimony about surviving the hardest chapters and recognizing the grace that carried you.</p>
+              <p class="track-description">A testimony about surviving the hardest chapters and recognizing the grace that carried you.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>Rooted in faith and gratitude, this song gives thanks for protection through seasons when survival itself felt like a miracle.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Platform links coming soon.</p>
             </div>
           </article>
 
@@ -211,8 +244,10 @@
             <div class="track-info">
               <span>Healing and hope</span>
               <h3>Hug a Horse</h3>
-              <p>A tribute to the quiet healing, trust, and peace found through horses.</p>
-              <div class="track-actions">
+              <p class="track-description">A tribute to the quiet healing, trust, and peace found through horses.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>Inspired by horse therapy, the song celebrates the calm presence of animals and the way trust can return without needing many words.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Available on YouTube.</p>
+              <div class="track-actions" aria-label="Stream Hug a Horse">
                 <a class="button button-small button-primary" href="https://youtu.be/Vql5kVDGSD0" target="_blank" rel="noopener">YouTube</a>
               </div>
             </div>
@@ -223,7 +258,9 @@
             <div class="track-info">
               <span>Identity and belonging</span>
               <h3>Men Like Me</h3>
-              <p>A heartfelt song about honesty, identity, and the courage to be seen.</p>
+              <p class="track-description">A heartfelt song about honesty, identity, and the courage to be seen.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>This song makes room for people who have had to fight for belonging, honesty, and the simple dignity of being known.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Platform links coming soon.</p>
             </div>
           </article>
 
@@ -232,7 +269,9 @@
             <div class="track-info">
               <span>Awareness and courage</span>
               <h3>Leave While You Can</h3>
-              <p>A direct, compassionate song about recognizing harm and finding the courage to walk away.</p>
+              <p class="track-description">A direct, compassionate song about recognizing harm and finding the courage to walk away.</p>
+              <div class="story-panel"><h4>Story behind the song</h4><p>Written as an encouragement toward safety and self-worth, this track speaks plainly to anyone needing permission to choose life and peace.</p></div>
+              <p class="release-info"><strong>Release information:</strong> Platform links coming soon.</p>
             </div>
           </article>
         </div>
