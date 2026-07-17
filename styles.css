@@ -19,6 +19,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 body {
   margin: 0;
@@ -40,8 +41,18 @@ textarea {
   font: inherit;
 }
 :focus-visible {
-  outline: 3px solid #f2c46d;
-  outline-offset: 4px;
+  outline: 4px solid #f2c46d;
+  outline-offset: 5px;
+  box-shadow: 0 0 0 7px rgba(23, 18, 13, 0.28);
+}
+.site-header :focus-visible,
+.section-dark :focus-visible,
+.hero :focus-visible,
+.country-life-card :focus-visible,
+.contact-card :focus-visible,
+.site-footer :focus-visible {
+  outline-color: #fff7df;
+  box-shadow: 0 0 0 7px rgba(216, 166, 79, 0.45);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -51,6 +62,10 @@ textarea {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+  .button:hover {
+    transform: none;
   }
 }
 
@@ -266,6 +281,10 @@ h2 {
 .button:hover {
   transform: translateY(-2px);
 }
+.button:focus-visible {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
 .button-primary {
   background: var(--gold);
   color: var(--ink);
@@ -318,6 +337,11 @@ h2 {
 
 .section {
   padding: 110px 0;
+  scroll-margin-top: 96px;
+}
+.track-card,
+.platform-links {
+  scroll-margin-top: 96px;
 }
 .section h2 {
   font-size: clamp(2.2rem, 5vw, 4.5rem);
@@ -395,6 +419,25 @@ blockquote {
 .section-dark .section-heading p {
   color: #cfc5bb;
 }
+.music-discovery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: -14px 0 28px;
+}
+.music-discovery a {
+  color: #fff7ec;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  padding: 10px 15px;
+  font-weight: 800;
+}
+.music-discovery a:hover,
+.music-discovery a:focus-visible {
+  background: var(--gold);
+  color: var(--ink);
+}
 .music-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -467,7 +510,8 @@ blockquote {
   padding: 10px 16px;
   font-weight: 700;
 }
-.platform-links a:hover {
+.platform-links a:hover,
+.platform-links a:focus-visible {
   background: white;
   color: var(--ink);
 }
@@ -833,6 +877,22 @@ blockquote {
   max-width: 720px;
   color: #f3e8dc;
   font-size: 1.1rem;
+}
+.country-life-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0 30px;
+}
+.country-life-list span {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+  color: #fff7ec;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  padding: 9px 13px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 900px) {
