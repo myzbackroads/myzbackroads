@@ -459,14 +459,18 @@ blockquote {
   background: linear-gradient(145deg, #52311d, #2b1a11);
 }
 .track-art {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  align-self: center;
+  overflow: hidden;
   background: rgba(0, 0, 0, 0.18);
-  min-height: 100%;
 }
 .track-art img {
+  width: 100%;
   height: 100%;
   aspect-ratio: 1 / 1;
-  object-fit: contain;
-  padding: 12px;
+  object-fit: cover;
+  padding: 0;
 }
 .track-info {
   padding: 26px;
@@ -474,7 +478,7 @@ blockquote {
   display: flex;
   min-height: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .track-info span {
   color: #f2c46d;
@@ -492,10 +496,23 @@ blockquote {
   color: #d8cec5;
 }
 .track-actions {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
-  margin-top: 20px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.track-actions .button {
+  width: 100%;
+  min-width: 0;
+  padding-inline: 12px;
+  text-align: center;
+  white-space: nowrap;
+}
+.section-dark .track-actions .button-ghost {
+  color: white;
+  border-color: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.04);
 }
 .platform-links {
   display: flex;
@@ -752,10 +769,12 @@ blockquote {
   .track-card.featured {
     grid-template-columns: 1fr;
   }
-  .track-art img {
-    aspect-ratio: 1 / 1;
-    height: auto;
-    max-height: 360px;
+  .track-art {
+    max-width: 360px;
+    margin-inline: auto;
+  }
+  .track-actions {
+    grid-template-columns: 1fr;
   }
   .button,
   .hero-actions {
