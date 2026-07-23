@@ -563,6 +563,13 @@ blockquote {
   text-decoration: none;
   box-shadow: 0 18px 40px rgba(37, 26, 17, 0.1);
 }
+.video-card > img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  background: #17120d;
+}
 .video-card div {
   padding: 22px;
 }
