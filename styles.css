@@ -485,7 +485,7 @@ blockquote {
   flex-direction: column;
   justify-content: flex-start;
 }
-.track-info span {
+.track-info > span {
   color: #f2c46d;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -521,14 +521,26 @@ blockquote {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   min-width: 0;
+  max-width: 100%;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: none;
+}
+.platform-button-content > span {
+  min-width: 0;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: none;
 }
 .platform-icon {
   display: block;
-  width: 20px;
-  height: 20px;
-  flex: 0 0 20px;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
   filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
 }
 .section-dark .track-actions .button-ghost {
