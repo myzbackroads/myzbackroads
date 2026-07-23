@@ -509,6 +509,20 @@ blockquote {
   text-align: center;
   white-space: nowrap;
 }
+.platform-button-content {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 0;
+}
+.platform-icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
 .section-dark .track-actions .button-ghost {
   color: white;
   border-color: rgba(255, 255, 255, 0.28);
