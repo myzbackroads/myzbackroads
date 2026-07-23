@@ -891,20 +891,56 @@ blockquote {
   backdrop-filter: blur(8px);
 }
 .section-country-life {
-  background:
-    linear-gradient(rgba(43, 26, 17, 0.76), rgba(43, 26, 17, 0.76)),
-    url("myz-backroads-truck-country-road.jpg") center center/cover no-repeat;
+  background: linear-gradient(145deg, #21140d, #3a2518);
   color: white;
 }
-.country-life-card {
-  max-width: 860px;
-  margin-inline: auto;
-  padding: clamp(32px, 6vw, 58px);
+.country-life-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
+  gap: 28px;
+  align-items: stretch;
+}
+.country-life-photo {
+  position: relative;
+  min-height: 640px;
+  margin: 0;
+  overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: var(--radius);
-  background: rgba(23, 18, 13, 0.72);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(12px);
+  background: #17120d;
+}
+.country-life-photo a {
+  display: block;
+  height: 100%;
+}
+.country-life-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 54%;
+}
+.country-life-photo figcaption {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(23, 18, 13, 0.82);
+  color: #fff7ec;
+  font-weight: 800;
+  backdrop-filter: blur(8px);
+}
+.country-life-card {
+  margin: 0;
+  padding: clamp(32px, 4vw, 52px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius);
+  background: rgba(23, 18, 13, 0.92);
+  box-shadow: var(--shadow);
 }
 .country-life-card .eyebrow {
   color: #f2c46d;
@@ -938,14 +974,21 @@ blockquote {
   .timeline-list article::after {
     display: none;
   }
+  .country-life-layout {
+    grid-template-columns: 1fr;
+  }
+  .country-life-photo {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+  }
 }
 
 @media (max-width: 640px) {
   .timeline-list {
     grid-template-columns: 1fr;
   }
-  .section-country-life {
-    background-position: center, 60% center;
+  .country-life-photo {
+    aspect-ratio: 3 / 4;
   }
 }
 
