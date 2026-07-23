@@ -892,8 +892,8 @@ blockquote {
 }
 .section-country-life {
   background:
-    linear-gradient(rgba(43, 26, 17, 0.82), rgba(43, 26, 17, 0.82)),
-    url("gallery-4.svg") center/cover no-repeat;
+    linear-gradient(rgba(43, 26, 17, 0.76), rgba(43, 26, 17, 0.76)),
+    url("myz-backroads-truck-country-road.jpg") center center/cover no-repeat;
   color: white;
 }
 .country-life-card {
@@ -943,6 +943,9 @@ blockquote {
 @media (max-width: 640px) {
   .timeline-list {
     grid-template-columns: 1fr;
+  }
+  .section-country-life {
+    background-position: center, 60% center;
   }
 }
 
