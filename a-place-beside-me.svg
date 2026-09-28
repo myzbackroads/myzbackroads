@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">A Place Beside Me cover artwork</title>
+  <desc id="desc">A cowboy sits on a mountain porch at sunset beside an empty rocking chair.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151725"/>
+      <stop offset=".38" stop-color="#7a3425"/>
+      <stop offset=".72" stop-color="#e66f22"/>
+      <stop offset="1" stop-color="#f1ad42"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#6a3c20"/>
+      <stop offset="1" stop-color="#24140e"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".65"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#sky)"/>
+  <circle cx="885" cy="505" r="62" fill="#ffd57d"/>
+  <path d="M0 625 C180 535 330 575 475 630 C635 690 760 555 930 590 C1050 612 1120 570 1200 545 V850 H0Z" fill="#3b3430"/>
+  <path d="M0 700 C170 610 365 665 510 715 C700 782 830 660 1010 688 C1090 700 1148 686 1200 668 V900 H0Z" fill="#252a25"/>
+  <path d="M0 775 C220 700 430 742 600 785 C790 833 1000 760 1200 750 V930 H0Z" fill="#171c19"/>
+  <g opacity=".95" fill="#15100d">
+    <rect x="0" y="845" width="1200" height="355" fill="url(#floor)"/>
+    <path d="M0 890 H1200 M0 960 H1200 M0 1030 H1200 M0 1100 H1200" stroke="#8b5935" stroke-width="8" opacity=".35"/>
+  </g>
+
+  <g filter="url(#shadow)" fill="#090909">
+    <ellipse cx="330" cy="795" rx="105" ry="80"/>
+    <path d="M250 765 Q330 690 405 770 L420 870 Q340 925 245 868Z"/>
+    <circle cx="322" cy="680" r="48"/>
+    <path d="M238 666 Q325 610 416 666 Q405 702 330 704 Q260 705 238 666Z"/>
+    <rect x="208" y="649" width="238" height="27" rx="13"/>
+    <path d="M290 855 L230 1035 L304 1044 L364 890Z"/>
+    <path d="M365 855 L405 1040 L478 1027 L426 875Z"/>
+  </g>
+
+  <g transform="translate(835 785)" fill="none" stroke="#1b110c" stroke-width="22" stroke-linecap="round" stroke-linejoin="round" filter="url(#shadow)">
+    <path d="M25 110 L25 360 M190 110 L190 360 M25 250 H190 M48 80 H170 V248 H48Z"/>
+    <path d="M5 375 Q105 440 210 375"/>
+  </g>
+
+  <rect x="0" y="0" width="1200" height="240" fill="#090909" opacity=".34"/>
+  <text x="600" y="112" text-anchor="middle" fill="#f1d6a1" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="78" letter-spacing="3">A PLACE BESIDE ME</text>
+  <text x="600" y="175" text-anchor="middle" fill="#efb46d" font-family="Georgia, serif" font-style="italic" font-size="38">Waiting for the man I haven't met</text>
+  <text x="600" y="1090" text-anchor="middle" fill="#f4dfb5" font-family="Georgia, serif" font-weight="700" font-size="50">I BELIEVE I’LL FIND YOU</text>
+  <text x="600" y="1150" text-anchor="middle" fill="#efb46d" font-family="Georgia, serif" font-size="34">MyZ Backroads</text>
+</svg>
